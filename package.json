@@ -1,0 +1,17 @@
+{
+  "name": "@femessage/blog",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vuepress dev .",
+    "build": "vuepress build ."
+  },
+  "devDependencies": {
+    "vuepress": "^1.0.0-alpha.44",
+    "vuepress-plugin-yuque": "^0.3.1"
+  },
+  "dependencies": {
+    "dotenv": "^7.0.0"
+  }
+}
