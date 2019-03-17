@@ -1,6 +1,6 @@
 # 团队博客
-https://femessage.github.io/blog/
+[https://github.com/FEMessage/blog](https://github.com/FEMessage/blog)
 
 分享经验，回馈社区
 
-如果觉得有帮助，请给个⭐️~
+可以在github上给我们反馈， 欢迎⭐️ ~
