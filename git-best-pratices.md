@@ -6,13 +6,16 @@
 
 ![不好的示例](https://cdn.nlark.com/yuque/0/2019/png/160590/1557468975997-7b1feb99-7f4b-497f-9e6c-8648277fbadb.png)
 
-这个issue被关闭了
+这个PR被关闭了
 
 ![关闭理由](https://cdn.nlark.com/yuque/0/2019/png/160590/1557469006766-3e276756-7477-4cff-9708-80c699c8336e.png)
 
 ## 根据模板进行PR描述
 
-下面是好的示例
+下面是好的示例，回答了三个点:
+- 为什么这样做
+- 怎么做
+- 相关思考内容
 
 ![好的示例](https://cdn.nlark.com/yuque/0/2019/png/160590/1557469076716-2ac5d6e3-14c3-42df-b8e1-62ecdaba2e97.png)
 
