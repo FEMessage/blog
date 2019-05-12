@@ -1,12 +1,10 @@
 # GIT常用命令
 
-<a name="df368884"></a>
 ## 前言
 这里列举常见场景，并给出相应解决方案
 
 约定： 下文代码块中`${}`里面表示的是变量，具体值视情况而定，其余的都是正确可执行的命令。
 
-<a name="224e2ccd"></a>
 ## 配置
 
 Mac/Linux 用户 执行以下操作
@@ -28,14 +26,12 @@ Windows用户在桌面用户文件夹下有个.gitconfig隐藏文件，直接修
   ps = push
 ```
 
-<a name="9a5e2729"></a>
 ## 增强
 Mac或Linux用户，推荐安装[https://github.com/robbyrussell/oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)，增强命令行体验。
 
 <a name="6ab35d2e"></a>
 ## 本地提交
 
-<a name="d97f7891"></a>
 ### 取消未暂存的修改
 ```bash
 # 恢复单个文件
@@ -45,13 +41,11 @@ git checkout -- ${file}
 git checkout -- .
 ```
 
-<a name="a60874a3"></a>
 ### 取消add
 ```bash
 git reset HEAD
 ```
 
-<a name="a00ef3da"></a>
 ### 取消提交
 
 ```bash
@@ -67,7 +61,6 @@ git log
 git reset ${hash}
 ```
 
-<a name="01ce5b76"></a>
 ### 修正提交
 
 适用于提交信息有误或有遗漏，需要修正最新提交信息的场景。
@@ -75,7 +68,6 @@ git reset ${hash}
 git commit --amend
 ```
 
-<a name="07e8a7ea"></a>
 ### stash修改
 
 适用于当前功能开发并不完整，不能产生一次提交，但却要开发另外功能的场景
@@ -83,22 +75,18 @@ git commit --amend
 git stash save '${msg}'
 ```
 
-<a name="f2210fdc"></a>
 ### 恢复stash
 ```bash
 git stash pop
 ```
 
-<a name="5aa52869"></a>
 ## 分支管理
 
-<a name="16103ed6"></a>
 ### 创建分支
 ```bash
 git checkout -b ${branch}
 ```
 
-<a name="5ae8ad56"></a>
 ### 查看远程分支
 ```bash
 git branch --remote
@@ -107,7 +95,6 @@ git branch --remote
 git branch -r
 ```
 
-<a name="f0dfd0dd"></a>
 ### 根据远程分支创建分支
 ```bash
 # 保证分支信息拉取下来
@@ -125,14 +112,11 @@ git checkout -b ${local_branch} -t origin/${branch}
 
 可以省略 `-b ${local_branch}`
 
-<a name="372eda64"></a>
 ### 创建干净历史分支
 ```bash
 git checkout --orphan ${branch}
 ```
 
-
-<a name="06649fb5"></a>
 ### 删除分支
 ```bash
 # 删除本地分支
@@ -144,52 +128,46 @@ git push origin -d ${remote_branch}
 git push origin :${remote_branch}
 ```
 
-<a name="2ec512a4"></a>
 ## 标签管理
 
-<a name="1d468ba5"></a>
 ### 新建本地标签
 ```bash
 git tag ${tag_name}
 ```
 
-<a name="30568ea1"></a>
 ### 删除本地标签
 ```bash
 git tag -d ${tag_name}
 ```
 
-<a name="33a93a70"></a>
 ### 查看本地所有标签
 ```bash
 git tag -l
 ```
 
-<a name="24a634bd"></a>
 ### 推送本地标签
 ```bash
 git push origin ${tag_name}
 
 # 推送所有标签
 git push origin --tags
+
+# 同时推送提交记录以及本分支的所有标签
+git push --follow-tags
 ```
 
-<a name="8f223397"></a>
 ### 获取远程标签
 ```bash
 git fetch origin tag
 ```
 
-<a name="3d9471e5"></a>
 ### 删除远程标签
 ```bash
 git push origin -d tag ${tag_name}
 ```
 
-<a name="44a6ae3f"></a>
 ## 远程仓库
 
-<a name="a410e2c9"></a>
 ### 浅克隆
 
 适用于仓库很大，对过往历史不关心，想快速克隆的场景。
@@ -197,7 +175,6 @@ git push origin -d tag ${tag_name}
 git clone --depth=1 ${repo_url}
 ```
 
-<a name="dd01a6fc"></a>
 ### 强行推送
 
 适用于本地开发了一段时间，最近才在代码托管平台上初始化远程仓库的场景
@@ -206,7 +183,6 @@ git clone --depth=1 ${repo_url}
 git push --force
 ```
 
-<a name="96680894"></a>
 ### 取消错误的推送
 
 适用于推送了错误的提交后, 想取消该推送的场景
