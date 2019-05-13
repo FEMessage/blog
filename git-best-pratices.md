@@ -14,10 +14,10 @@
 
 下面是好的示例，回答了三个点:
 - Why：为什么这样做
-- How：总体思路
+- How：说明思路及操作步骤
 - Xmind：相关脑图，体现细节(流程图也可以)
 
-![image-20190513135910902](assets/image-20190513135910902.png)
+![image-20190513142522614](assets/image-20190513135910902.png)
 
 [PR链接](https://github.com/FEMessage/vue-sfc-cli/pull/35)
 
