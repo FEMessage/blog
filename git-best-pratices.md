@@ -19,6 +19,8 @@
 
 ![image-20190513135910902](assets/image-20190513135910902.png)
 
+[PR链接](https://github.com/FEMessage/vue-sfc-cli/pull/35)
+
 ## bug修复
 
 提交格式为：<br />fix #${bugId} ${bugMsg}
