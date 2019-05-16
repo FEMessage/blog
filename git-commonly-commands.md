@@ -175,6 +175,13 @@ git push origin -d tag ${tag_name}
 git clone --depth=1 ${repo_url}
 ```
 
+### 克隆指定分支
+
+适用于只想要某一分支代码的场景。
+```bash
+git clone -b ${branch} ${repo_url}
+```
+
 ### 强行推送
 
 适用于本地开发了一段时间，最近才在代码托管平台上初始化远程仓库的场景
