@@ -32,8 +32,6 @@ function generateSidebar() {
     })
   })
 
-  console.log('_sidebar :', _sidebar)
-
   return _sidebar
 }
 
