@@ -4,45 +4,45 @@ const fs = require('fs')
 const path = require('path')
 const fg = require('fast-glob')
 const chokidar = require('chokidar')
+const docsDir = 'docs'
 
-const patterns = ['post/**/*.md'] // 只查询 post 目录
-const posts = new Set(fg.sync(patterns))
+const patterns = [`${docsDir}/**/*.md`] 
+const docs = new Set(fg.sync(patterns))
 
-// 生成 _sidebar 数组
+let sidebar = [] 
+
+// 生成 sidebar 数组
 function generateSidebar() {
   const _sidebar = []
-  const folders = fs.readdirSync('post', { encoding: 'utf-8' })
+  const folders = fs.readdirSync(docsDir, { encoding: 'utf-8' })
+	const isDirFile = (fullpath, dir) => fullpath.split('/')[1] == dir
 
-  folders.forEach(folder => {
-    _sidebar.push({
-      collapsable: false,
-      children: [],
-      folder
-    })
-  })
+  _sidebar = folders.map(folder => ({collapsable: false, children: [], folder}))
 
-  posts.forEach(file => {
-    const name = path.basename(file, '.md')
+  docs.forEach(doc => {
+    const name = path.basename(doc, '.md')
 
     _sidebar.forEach(item => {
       // 如果文件名以 '_' 开头说明是侧边栏的标题文件
-      if (name.startsWith('_') && file.includes(item.folder)) {
-        item.title = fs.readFileSync(file, { encoding: 'utf-8' }).trim()
-      } else if (file.includes(item.folder)) {
-        item.children.push('/' + file)
+      if (name.startsWith('_') && isDirFile(doc, item.folder)) {
+        item.title = fs.readFileSync(doc, { encoding: 'utf-8' }).trim()
+      } else if (isDirFile(doc, item.folder)) {
+        item.children.push('/' + doc)
       }
     })
   })
 
+	//console.log(_sidebar)
+
   return _sidebar
 }
 
-let sidebar = generateSidebar()
-const watcher = chokidar.watch(patterns, { ignoreInitial: true }) // 创建监听文件变化的观察者
+// 监听文件变化
+const watcher = chokidar.watch(patterns, { ignoreInitial: true }) 
 
 watcher
   .on('add', file => {
-    posts.add(file)
+    docs.add(file)
     sidebar = generateSidebar()
   })
   .on('change', file => {
@@ -53,9 +53,12 @@ watcher
     }
   })
   .on('unlink', file => {
-    posts.add(file)
+    docs.add(file)
     sidebar = generateSidebar()
   })
+
+// 初始化sidebar
+sidebar = generateSidebar()
 
 module.exports = {
   title: 'FEMessage blog',
