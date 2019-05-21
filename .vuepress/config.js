@@ -37,25 +37,27 @@ function generateSidebar() {
   return _sidebar
 }
 
-// 监听文件变化
-const watcher = chokidar.watch(patterns, { ignoreInitial: true }) 
-
-watcher
-  .on('add', file => {
-    docs.add(file)
-    sidebar = generateSidebar()
-  })
-  .on('change', file => {
-    const name = path.basename(file, '.md')
-
-    if (name.startsWith('_')) {
+if (process.env.NODE_ENV != 'production') {
+  // 监听文件变化
+  const watcher = chokidar.watch(patterns, { ignoreInitial: true }) 
+  
+  watcher
+    .on('add', file => {
+      docs.add(file)
       sidebar = generateSidebar()
-    }
-  })
-  .on('unlink', file => {
-    docs.add(file)
-    sidebar = generateSidebar()
-  })
+    })
+    .on('change', file => {
+      const name = path.basename(file, '.md')
+  
+      if (name.startsWith('_')) {
+        sidebar = generateSidebar()
+      }
+    })
+    .on('unlink', file => {
+      docs.add(file)
+      sidebar = generateSidebar()
+   })
+}
 
 // 初始化sidebar
 sidebar = generateSidebar()
