@@ -8,6 +8,8 @@
     "build": "vuepress build ."
   },
   "devDependencies": {
+    "chokidar": "^2.1.6",
+    "fast-glob": "^2.2.6",
     "vuepress": "^1.0.0-alpha.44",
     "vuepress-plugin-yuque": "^0.3.1"
   },
