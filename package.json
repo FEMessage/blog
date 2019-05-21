@@ -9,12 +9,9 @@
   },
   "devDependencies": {
     "chokidar": "^2.1.6",
+    "dotenv": "^8.0.0",
     "fast-glob": "^2.2.6",
-    "vuepress": "^1.0.0-alpha.44",
-    "vuepress-plugin-yuque": "^0.3.1"
+    "vuepress": "^1.0.0-alpha.44"
   },
-  "dependencies": {
-    "dotenv": "^7.0.0",
-    "glob": "^7.1.4"
-  }
+  "dependencies": {}
 }
