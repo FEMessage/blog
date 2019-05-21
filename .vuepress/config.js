@@ -13,7 +13,7 @@ let sidebar = []
 
 // 生成 sidebar 数组
 function generateSidebar() {
-  const _sidebar = []
+  let _sidebar = []
   const folders = fs.readdirSync(docsDir, { encoding: 'utf-8' })
 	const isDirFile = (fullpath, dir) => fullpath.split('/')[1] == dir
 
