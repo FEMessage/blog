@@ -31,6 +31,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "lianghx-319",
+      "name": "Han",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/27187946?v=4",
+      "profile": "https://github.com/lianghx-319",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "contributorsPerLine": 7
