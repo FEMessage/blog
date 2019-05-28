@@ -74,7 +74,7 @@ module.exports = {
       }
     ]
   ],
-  //base: '/blog/',
+  base: '/blog/',
   themeConfig: {
     repo: 'FEMessage/blog',
     editLinks: true,
