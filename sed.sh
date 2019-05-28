@@ -1,3 +1,4 @@
 #!/bin/sh
 sed -i -e 's/<sub>//g;s/<\/sub>//g' README.md 
-rm README.md-e 
+# mac会自动备份
+# rm README.md-e 
