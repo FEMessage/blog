@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "vuepress dev .",
-    "build": "cross-env NODE_ENV=production vuepress build ."
+    "build": "./sed.sh && cross-env NODE_ENV=production vuepress build ." 
   },
   "devDependencies": {
     "chokidar": "^2.1.6",
