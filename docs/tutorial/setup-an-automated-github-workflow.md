@@ -53,10 +53,14 @@
 注意点：
 
 - merge 到 dev，使用squash merge
+
+![squash merge](assets/image-20190606165218200.png)
+
 - merge 到 master，使用普通的merge
 - 永远不向master直接commit代码
 
-<a name="d9c4a89d"></a>
+
+
 ### CI集成
 推荐两个工具：
 
