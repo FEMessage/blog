@@ -75,7 +75,7 @@ travis ci的作用是，master有代码更新时，自动构建发布。可以�
 ### 自动生成Release Notes
 让我们渐进式地实现这个功能。
 
-首先要规范化commit message，具体可以查看[Commit Message Guidelines](https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#commits)。
+首先要规范化commit message，具体可以查看[Commit Message Guidelines](https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#commits)，这个叫做[Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0-beta.4/)。
 
 摘取重点如下，格式为：
 
