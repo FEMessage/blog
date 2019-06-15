@@ -54,7 +54,7 @@
 
 - merge 到 dev，使用squash merge
 
-![squash merge](assets/image-20190606165218200.png)
+![squash merge](https://cdn.nlark.com/yuque/0/2019/png/160590/1560580837435-bbfbe99e-afd7-413f-a69c-6773c313056f.png)
 
 - merge 到 master，使用普通的merge
 - 永远不向master直接commit代码
