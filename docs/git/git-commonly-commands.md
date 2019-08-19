@@ -85,6 +85,9 @@ git stash pop
 ### 创建分支
 ```bash
 git checkout -b ${branch}
+
+# 根据commit hash 创建分支
+git checkout -b ${branch} ${commit_hash}
 ```
 
 ### 查看远程分支
@@ -93,6 +96,12 @@ git branch --remote
 
 # 或者
 git branch -r
+```
+
+如果上述命令看不到所有的远程分支，可以使用以下命令
+
+```bash
+git ls-remote --heads
 ```
 
 ### 根据远程分支创建分支
