@@ -1,4 +1,4 @@
-# 🤖自动化的Github Workflow
+# 🌪自动化的Github Workflow
 
 ## 前言
 本文说明了我们的开源项目的Github协作流程，并解释了如何做到规范化及自动化。
