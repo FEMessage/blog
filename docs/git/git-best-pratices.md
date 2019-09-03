@@ -3,7 +3,7 @@
 ## 一个功能对应一个分支
 
 下面是好的示例： 格式化代码，也应该单独一个PR
-[好的示例](https://tva1.sinaimg.cn/large/006y8mN6gy1g6megbpz6qj315a0le77p.jpg)
+![好的示例](https://tva1.sinaimg.cn/large/006y8mN6gy1g6megbpz6qj315a0le77p.jpg)
 
 下面是不好的示例：因为一个PR修改了太多内容
 
