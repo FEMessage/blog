@@ -21,9 +21,10 @@
 
 选择个人或组织名下需要关联Travis CI的Github仓库。
 
-已经设置过的，想进行修改，可以在Github的 Personal settings-> Applications 中进入。<br />![](https://cdn.nlark.com/yuque/0/2019/png/160590/1552699916365-0a309745-c830-480e-8c8f-58b2dde3f7bc.png#align=left&display=inline&height=285&originHeight=381&originWidth=227&size=0&status=done&width=170#align=left&display=inline&height=381&originHeight=381&originWidth=227&status=done&width=227)![image.png](https://cdn.nlark.com/yuque/0/2019/png/160590/1552695398638-13ec5516-3002-4a74-bf08-099b32f2b612.png#align=left&display=inline&height=259&name=image.png&originHeight=958&originWidth=1992&size=408088&status=done&width=538#align=left&display=inline&height=359&originHeight=958&originWidth=1992&status=done&width=746)
+已经设置过的，想进行修改，可以在Github的 Personal settings-> Applications 中进入。<br />![](https://tva1.sinaimg.cn/large/006y8mN6gy1g6mc6dojqhj306b0al3yr.jpg)
+![image.png](https://tva1.sinaimg.cn/large/006y8mN6gy1g6mc6oifi8j31jc0qmwi8.jpg)
 
-![](https://cdn.nlark.com/yuque/0/2019/png/160590/1552695750384-cc7d516e-c10d-4553-8811-84ac13f3ee4f.png#align=left&display=inline&height=352&originHeight=632&originWidth=1340&status=done&width=746)
+![](https://tva1.sinaimg.cn/large/006y8mN6gy1g6mc6vjxb5j31180hk763.jpg)
 
 ## 编写CI文件
 
@@ -141,7 +142,7 @@ deploy:
   skip-cleanup: true
 ```
 
-api_key指的的npm的token，可以登录npm后，在个人中心生成<br />![](https://cdn.nlark.com/yuque/0/2019/png/160590/1555237926690-d79ff285-afdc-4ff8-ab58-3693930e57dc.png#align=left&display=inline&height=344&originHeight=688&originWidth=1944&size=0&status=done&width=972)
+api_key指的的npm的token，可以登录npm后，在个人中心生成<br />![](https://tva1.sinaimg.cn/large/006y8mN6gy1g6mc7fic6sj31i00j4tbu.jpg)
 
 因为不能泄露，所以要通过travis ci的命令行工具进行加密，执行以下命令
 
@@ -228,9 +229,11 @@ travis encrypt github-token=xxx --add deploy.github-token --com
 
 ### 通过环境变量设置GITHUB_TOKEN
 
-首先为Travis CI新建一个token<br />![](https://cdn.nlark.com/yuque/0/2019/png/160590/1552699916365-0a309745-c830-480e-8c8f-58b2dde3f7bc.png#align=left&display=inline&height=285&name=&originHeight=381&originWidth=227&status=done&width=170#align=left&display=inline&height=381&originHeight=381&originWidth=227&status=done&width=227)![](https://cdn.nlark.com/yuque/0/2019/png/160590/1552699974567-7208da19-fdb5-4c43-b19b-61acfb4c4783.png#align=left&display=inline&height=184&name=&originHeight=184&originWidth=254&size=0&status=done&width=254#align=left&display=inline&height=184&originHeight=184&originWidth=254&status=done&width=254)![](https://cdn.nlark.com/yuque/0/2019/png/160590/1552700133575-16c48b5a-fe9c-4eb4-a6ab-cf4e066d5881.png#align=left&display=inline&height=204&name=&originHeight=204&originWidth=262&size=0&status=done&width=262#align=left&display=inline&height=204&originHeight=204&originWidth=262&status=done&width=262)
+首先为Travis CI新建一个token<br />![](https://tva1.sinaimg.cn/large/006y8mN6gy1g6mc7wji7dj306b0al3yr.jpg)
+![](https://tva1.sinaimg.cn/large/006y8mN6gy1g6mc9aokfuj3072054jrh.jpg)
+![](https://tva1.sinaimg.cn/large/006y8mN6gy1g6mc86igirj307a05ot8u.jpg)
 
-点击生成新token<br />![](https://cdn.nlark.com/yuque/0/2019/png/160590/1552700229186-44a679d9-254f-4377-94bd-ac115e345cec.png#align=left&display=inline&height=64&name=&originHeight=82&originWidth=961&size=0&status=done&width=746#align=left&display=inline&height=64&originHeight=82&originWidth=961&status=done&width=746)
+点击生成新token<br />![](https://tva1.sinaimg.cn/large/006y8mN6gy1g6mc9l127yj30qp02a74f.jpg)
 
 设置权限
 
@@ -253,7 +256,7 @@ travis encrypt github-token=xxx --add deploy.github-token --com
 
 ![image.png](https://camo.githubusercontent.com/04cd0a6cfed07d7ffbdc94dd5b6d2581e4b5e308/68747470733a2f2f63646e2e6e6c61726b2e636f6d2f79757175652f302f323031392f706e672f3136303539302f313535323639393539363430322d30383230346638612d356633362d343938362d616262372d6530623365616137616236652e706e6723616c69676e3d6c65667426646973706c61793d696e6c696e65266865696768743d313030266e616d653d696d6167652e706e67266f726967696e4865696768743d323030266f726967696e57696474683d313630362673697a653d313134343838267374617475733d646f6e652677696474683d38303323616c69676e3d6c65667426646973706c61793d696e6c696e65266865696768743d3933266f726967696e4865696768743d323030266f726967696e57696474683d31363036267374617475733d646f6e652677696474683d373436)
 
-往下翻看，可以看到效果<br />![image.png](https://camo.githubusercontent.com/39c0771c595e8532683831f8c5a1a67c43ab5886/68747470733a2f2f63646e2e6e6c61726b2e636f6d2f79757175652f302f323031392f706e672f3136303539302f313535323639393633313630352d37623031386334612d396534662d343430352d393432332d3933343566336162313665332e706e6723616c69676e3d6c65667426646973706c61793d696e6c696e65266865696768743d323434266e616d653d696d6167652e706e67266f726967696e4865696768743d343838266f726967696e57696474683d313338302673697a653d323738373434267374617475733d646f6e652677696474683d36393023616c69676e3d6c65667426646973706c61793d696e6c696e65266865696768743d323634266f726967696e4865696768743d343838266f726967696e57696474683d31333830267374617475733d646f6e652677696474683d373436)<br />因为笔者自定义了域名，所以地址不是默认的 [https://xxx.github.io/xxx](https://xxx.github.io/xxx)
+往下翻看，可以看到效果<br />![image.png](https://camo.githubusercontent.com/39c0771c595e8532683831f8c5a1a67c43ab5886/68747470733a2f2f63646e2e6e6c61726b2e636f6d2f79757175652f302f323031392f706e672f3136303539302f313535323639393633313630352d37623031386334612d396534662d343430352d393432332d3933343566336162313665332e706e6723616c69676e3d6c65667426646973706c61793d696e6c696e65266865696768743d323434266e616d653d696d6167652e706e67266f726967696e4865696768743d343838266f726967696e57696474683d313338302673697a653d323738373434267374617475733d646f6e652677696474683d36393023616c69676e3d6c65667426646973706c61793d696e6c696e65266865696768743d323634266f726967696e4865696768743d343838266f726967696e57696474683d31333830267374617475733d646f6e652677696474683d373436)因为笔者自定义了域名，所以地址不是默认的 [https://xxx.github.io/xxx](https://xxx.github.io/xxx)
 
 ## 注
 

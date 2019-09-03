@@ -17,7 +17,7 @@
 ### Symantec
 阿里云可以购买有效期一年的免费证书，审核时间大概10分钟，优点是域名不用备案。强烈推荐。<br />![image.png](https://tva1.sinaimg.cn/large/006y8mN6gy1g6mahokwk5j31v80nuwkj.jpg)
 
-购买后，点击下载<br />![image.png](https://cdn.nlark.com/yuque/0/2019/png/160590/1555253388293-a7c2c868-b192-4b70-8b0d-ec0a3dab8bd7.png#align=left&display=inline&height=357&name=image.png&originHeight=714&originWidth=636&size=140302&status=done&width=318)<br />即可获得证书
+购买后，点击下载<br />![image.png](https://tva1.sinaimg.cn/large/006y8mN6gy1g6mc5kffb4j30ho0jut9x.jpg)<br />即可获得证书
 
 ### letsencrypt
 虽然是免费的，但安装比较费时间，如果网络不太好，会很捉急。
