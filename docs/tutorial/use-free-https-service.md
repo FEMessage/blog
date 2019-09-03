@@ -15,7 +15,7 @@
 
 ## 证书
 ### Symantec
-阿里云可以购买有效期一年的免费证书，审核时间大概10分钟，优点是域名不用备案。强烈推荐。<br />![image.png](https://cdn.nlark.com/yuque/0/2019/png/160590/1555252862348-c6098efc-228c-4681-9a4e-b9b8c7adb69d.png#align=left&display=inline&height=429&name=image.png&originHeight=858&originWidth=2420&size=626737&status=done&width=1210)
+阿里云可以购买有效期一年的免费证书，审核时间大概10分钟，优点是域名不用备案。强烈推荐。<br />![image.png](https://tva1.sinaimg.cn/large/006y8mN6gy1g6mahokwk5j31v80nuwkj.jpg)
 
 购买后，点击下载<br />![image.png](https://cdn.nlark.com/yuque/0/2019/png/160590/1555253388293-a7c2c868-b192-4b70-8b0d-ec0a3dab8bd7.png#align=left&display=inline&height=357&name=image.png&originHeight=714&originWidth=636&size=140302&status=done&width=318)<br />即可获得证书
 
