@@ -1,6 +1,5 @@
 # 🤖自动化的Github Workflow
 
-<a name="df368884"></a>
 ## 前言
 本文说明了我们的开源项目的Github协作流程，并解释了如何做到规范化及自动化。
 
@@ -16,9 +15,7 @@
 1. 不需要提交构建产物到仓库
 1. 合并/发布操作完全在线化，维护者不需要拉取最新代码到本地。
 
-<a name="58378f0d"></a>
 ## 正文
-<a name="ac042595"></a>
 ### 内容模板
 内容模板包括：
 
@@ -31,14 +28,13 @@
 - PULL_REQUEST_TEMPLATE.md
 
 也可以通过界面设置。在仓库设置里，点击“Set up templates”<br />
-![image.png](https://cdn.nlark.com/yuque/0/2019/png/160590/1555040003314-de4adcc6-8736-4aab-8f2c-d22ba5818f09.png#align=left&display=inline&height=605&name=image.png&originHeight=1210&originWidth=1882&size=869238&status=done&width=941)
+![image.png](https://tva1.sinaimg.cn/large/006y8mN6gy1g6m5ffbcrjj315g0qndkv.jpg)
 
 如果是组织，想为所有项目设置模板，则可以在组织下建立一个名为 `.github` 的仓库, 再重复上面的过程即可<br />
-![image.png](https://cdn.nlark.com/yuque/0/2019/png/160590/1555040119728-73604366-e0ed-4682-9da9-32340f2dbd05.png#align=left&display=inline&height=422&name=image.png&originHeight=844&originWidth=1310&size=407262&status=done&width=655)
+![image.png](https://tva1.sinaimg.cn/large/006y8mN6gy1g6m5fp1qonj310e0ngq6b.jpg)
 
 具体内容参考我们的[仓库设置](https://github.com/FEMessage/.github)
 
-<a name="78653ba1"></a>
 ### 分支模型
 仓库有两个基础分支：
 
@@ -71,7 +67,6 @@ netlify的作用是，当有新的pr发生时，可以提前预览修改后构�
 
 travis ci的作用是，master有代码更新时，自动构建发布。可以查看[travis ci使用教程](https://github.com/levy9527/blog/issues/1)
 
-<a name="3f128651"></a>
 ### 自动生成Release Notes
 让我们渐进式地实现这个功能。
 
@@ -115,22 +110,19 @@ type的类型有：
 
 以上操作对非开源项目也适用，是可以在公司产品、项目中推广的方式。
 
-如果要针对Github生成Release Notes，可以借助工具：[https://github.com/github-tools/github-release-notes](https://github.com/github-tools/github-release-notes)
+如果要针对 Github 生成 Release Notes，可以借助工具：[https://github.com/github-tools/github-release-notes](https://github.com/github-tools/github-release-notes)
 
-<a name="9G58Q"></a>
 ## 误区
-<a name="qUd5o"></a>
 #### dev分支不是最新的
 结论：master的commit次数会比dev多，但dev的功能代码是比master新的。
 
 解释：因为master合并dev的代码会产生一个commit，同时又因为自动生成Release Notes时，CI会修改package.json，并新增一个commit，所以master永远有比dev多出的commit
 
-下图是dev合并了pr，还master还未合并dev的情况：master既有领先，又有落后。<br />![image.png](https://cdn.nlark.com/yuque/0/2019/png/160590/1559275149860-d7b10f9c-1b83-4691-8daf-74f1befb0bb6.png#align=left&display=inline&height=133&name=image.png&originHeight=266&originWidth=1990&size=239373&status=done&width=995)
+下图是dev合并了pr，还master还未合并dev的情况：master既有领先，又有落后。<br />![image.png](https://tva1.sinaimg.cn/large/006y8mN6gy1g6m5gyru0uj315g05jabe.jpg)
 
-以下是master合并了dev，并且通过CI成功发布后的情况<br />![image.png](https://cdn.nlark.com/yuque/0/2019/png/160590/1559275729580-79649464-4bc3-44d8-bc39-977ab60d4b00.png#align=left&display=inline&height=121&name=image.png&originHeight=242&originWidth=1966&size=216509&status=done&width=983)
-<a name="5mHY7"></a>
+以下是master合并了dev，并且通过CI成功发布后的情况<br />![image.png](https://tva1.sinaimg.cn/large/006y8mN6gy1g6m5h8bb75j315g054aba.jpg)
 #### 在dev分支查看package.json
-结论：以npm上的版本为准，可以查看README.md的图标<br />![image.png](https://cdn.nlark.com/yuque/0/2019/png/160590/1559275890081-6b0c62c7-64c9-4128-9d8d-e7b516db5e20.png#align=left&display=inline&height=177&name=image.png&originHeight=354&originWidth=1946&size=158056&status=done&width=973)
+结论：以npm上的版本为准，可以查看README.md的图标<br />![image.png](https://tva1.sinaimg.cn/large/006y8mN6gy1g6m5hft89hj315g07j0tm.jpg)
 
-解释：接入CI后，package.json的修改不再由人工操作，所以dev的package.json不会得到更新。<br />![image.png](https://cdn.nlark.com/yuque/0/2019/png/160590/1559275853192-24c15a9b-31bd-4f43-8f18-6fd76a6974ed.png#align=left&display=inline&height=436&name=image.png&originHeight=872&originWidth=1966&size=660724&status=done&width=983)
+解释：接入CI后，package.json的修改不再由人工操作，所以dev的package.json不会得到更新。<br />![image.png](https://tva1.sinaimg.cn/large/006y8mN6gy1g6m5hjt1pqj315g0ietc9.jpg)
 
