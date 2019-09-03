@@ -50,7 +50,7 @@
 
 - merge 到 dev，使用squash merge
 
-![squash merge](https://cdn.nlark.com/yuque/0/2019/png/160590/1560580837435-bbfbe99e-afd7-413f-a69c-6773c313056f.png)
+![squash merge](https://tva1.sinaimg.cn/large/006y8mN6gy1g6m6nqhakxj313g0cu76c.jpg)
 
 - merge 到 master，使用普通的merge
 - 永远不向master直接commit代码

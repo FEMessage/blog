@@ -426,6 +426,6 @@ yarn test --watch
 ### 为什么使用jest
 
 因为这是vue官方工具链的一部分, 同时也可以为后续的组件测试作准备。
-![](https://cdn.nlark.com/yuque/0/2019/png/160590/1560233227494-a5d13c94-ebc2-4296-bb3e-d5406f832b6c.png?x-oss-process=image/watermark,type_d3F5LW1pY3JvaGVp,size_10,text_5ru05pmu56eR5oqA,color_FFFFFF,shadow_50,t_80,g_se,x_10,y_10)
+![](https://tva1.sinaimg.cn/large/006y8mN6gy1g6m6p99ebsj31ak0m877q.jpg)
 
 更多请点击查看[2019-06-04尤雨溪的vue技术分享](https://www.yuque.com/preview/yuque/0/2019/pdf/160590/1560232844122-419cd5a9-5d42-4a35-a266-6d6ea02828b3.pdf)
