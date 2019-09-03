@@ -1,6 +1,5 @@
 # ✅使用jest进行测试驱动开发
 
-<a name="HZ8cL"></a>
 ## 前言
 本文将使用[jest](https://jestjs.io/docs/en/getting-started)进行测试驱动开发的示例，源码在[github](https://github.com/levy9527/jest-tdd-demo)。重点说明在开发中引入单元测试后开发过程，以及测试先行的开发思路。
 
@@ -10,7 +9,6 @@
 
 本文主要以函数作为测试对象。
 
-<a name="qMpZg"></a>
 ## 环境搭建
 假设项目结构为
 ```bash
@@ -36,7 +34,6 @@ yarn add --dev jest
 
 之后把测试文件放在test文件夹下，使用`yarn test` 即可查看测试结果
 
-<a name="N3DOZ"></a>
 ## 开发
 现在要开发一个函数，根据传入的文件名判断是否为shell文件。
 
@@ -48,7 +45,6 @@ yarn add --dev jest
 
 下面来看下开发步骤是怎么样的。
 
-<a name="zie6g"></a>
 ### 文件初始化
 在src目录下新建 `isShellFile.js` 
 
@@ -64,7 +60,6 @@ touch isShellFile.js
 touch isShellFile.test.js
 ```
 
-<a name="Pv5Ni"></a>
 ### 第一个用例
 打开测试文件 `test/isShellFile.test.js` ，编写第一个用例，也是最普通的一个: `bash.sh` 
 
@@ -154,7 +149,6 @@ git add package.json yarn.lock src test
 git commit -m 'feat: init jest test case'
 ```
 
-<a name="svXqP"></a>
 ### 第二个用例
 观察我们的测试用例，发现太简单了，只有正面的用例，没有反面的、异常的用例
 ```javascript
@@ -219,7 +213,6 @@ Ran all test suites.
 git commit -am 'fix: 函数永远返回真的bug'
 ```
 
-<a name="sWYkz"></a>
 ### 第三个用例
 我们再添加一个用例，这次考虑特殊情况： `.sh` 这种文件，不算是shell文件。
 
@@ -262,7 +255,6 @@ git commit -am 'fix: 函数永远返回真的bug'
 git commit -am 'fix: .sh应该返回false'
 ```
 
-<a name="axk1Q"></a>
 ### 第四个用例
 按照第三个用例的逻辑， `.bash.sh` 也不应该是shell文件，那么函数是否能正确判断呢，测试便知。
 
@@ -304,7 +296,6 @@ git commit -am 'fix: .sh应该返回false'
 git commit -am 'fix: .开头的文件不算sh文件'
 ```
 
-<a name="YxeGj"></a>
 ### 第五个用例
 再考虑一种情况，如果 `.sh` 出现在中间呢？如 `bash.sh.txt` , 它不应该是shell文件，来看看函数是否能通过测试。
 
@@ -347,7 +338,6 @@ git commit -am 'fix: .开头的文件不算sh文件'
 git commit -am 'fix: .sh必须在结尾'
 ```
 
-<a name="ALhwi"></a>
 ### 重构
 我们来观察目前 `src/isShellFile.js` 的函数逻辑
 ```javascript
@@ -380,7 +370,6 @@ git commit -am 'refactor: 优化逻辑'
 
 至于其他方面，见仁见智，并不是重点。
 
-<a name="rNCGs"></a>
 ## 结论
 本文通过代码实例，践行了测试先行的理念。
 
@@ -404,9 +393,7 @@ git commit -am 'refactor: 优化逻辑'
 
 更关键的是，完善的测试用例，是开发者的“守护天使”，有了它们，以后在添加新功能时，修改/重构代码都有了可靠的保障，让开发者可以充满信心，code with confidence😎！
 
-<a name="tNYJt"></a>
 ## 扩展
-<a name="v3syB"></a>
 ### 使用babel
 要想使用import/export语法，需要安装babel相关依赖
 
