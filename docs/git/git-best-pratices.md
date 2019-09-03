@@ -2,11 +2,12 @@
 
 ## 一个功能对应一个分支
 
-下面是不好的示例
+下面是好的示例： 格式化代码，也应该单独一个PR
+[好的示例](https://tva1.sinaimg.cn/large/006y8mN6gy1g6megbpz6qj315a0le77p.jpg)
+
+下面是不好的示例：因为一个PR修改了太多内容
 
 ![不好的示例](https://tva1.sinaimg.cn/large/006y8mN6gy1g6md819j8qj312y0dajsm.jpg)
-
-这个PR被关闭了，因为一个PR带上了太多的功能
 
 ![关闭理由](https://tva1.sinaimg.cn/large/006y8mN6gy1g6md86mgeuj312w0aegmx.jpg)
 
@@ -20,9 +21,9 @@
 
 优先使用正面肯定语句，而不是否定句。
 
-不好的示例：`docs: 更新不直观的例子`
-
 好的示例：`docs: extraQuery 的正确使用方法`
+
+不好的示例：`docs: 更新不直观的例子`
 
 ![](https://tva1.sinaimg.cn/large/006y8mN6gy1g6mdn22hcsj312207uabq.jpg)
 
