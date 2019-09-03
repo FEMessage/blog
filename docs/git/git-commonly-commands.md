@@ -14,7 +14,7 @@ vi ~/.gitconfig
 
 Windows用户在桌面用户文件夹下有个.gitconfig隐藏文件，直接修改即可
 
-![](https://cdn.nlark.com/yuque/0/2019/png/210664/1547175144703-dfccb8e7-55f7-4be0-a030-2c5ff2bdc1c5.png#align=left&display=inline&height=565&originHeight=805&originWidth=1179&status=done&width=827)
+![](https://tva1.sinaimg.cn/large/006y8mN6gy1g6mdu2l6y8j30wr0mdwif.jpg)
 
 补充以下内容
 ```bash
@@ -29,7 +29,6 @@ Windows用户在桌面用户文件夹下有个.gitconfig隐藏文件，直接修
 ## 增强
 Mac或Linux用户，推荐安装[https://github.com/robbyrussell/oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)，增强命令行体验。
 
-<a name="6ab35d2e"></a>
 ## 本地提交
 
 ### 取消未暂存的修改
@@ -225,7 +224,7 @@ git push --force
 
 1.checkout目标分支(target branch)
 
-2.在源分支(source  branch)获取revision number<br />![](https://cdn.nlark.com/yuque/0/2018/png/160590/1542699698608-3b2be42b-2148-4355-a76e-dc259172faeb.png#align=left&display=inline&height=261&originHeight=724&originWidth=2076&status=done&width=747)<br />3.开始cherry-pick
+2.在源分支(source  branch)获取revision number<br />![](https://tva1.sinaimg.cn/large/006y8mN6gy1g6mdui8x1hj31lo0k443z.jpg)<br />3.开始cherry-pick
 
 输入命令
 
