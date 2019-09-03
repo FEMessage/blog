@@ -4,22 +4,34 @@
 
 下面是不好的示例
 
-![不好的示例](https://cdn.nlark.com/yuque/0/2019/png/160590/1557468975997-7b1feb99-7f4b-497f-9e6c-8648277fbadb.png)
+![不好的示例](https://tva1.sinaimg.cn/large/006y8mN6gy1g6md819j8qj312y0dajsm.jpg)
 
-这个PR被关闭了
+这个PR被关闭了，因为一个PR带上了太多的功能
 
-![关闭理由](https://cdn.nlark.com/yuque/0/2019/png/160590/1557469006766-3e276756-7477-4cff-9708-80c699c8336e.png)
+![关闭理由](https://tva1.sinaimg.cn/large/006y8mN6gy1g6md86mgeuj312w0aegmx.jpg)
 
-## 根据模板进行PR描述
+## 使用正确的标题
 
-下面是好的示例，回答了三个点:
-- Why：为什么这样做
-- How：说明思路及操作步骤
-- Xmind：相关脑图，体现细节(流程图也可以)
+[相关规范看这里](https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#commits)
 
-![image-20190513142522614](assets/image-20190513135910902.png)
+另外，请回答：出于什么原因需要进行这次修改？具体改动了些什么？
 
-[PR链接](https://github.com/FEMessage/vue-sfc-cli/pull/35)
+使用一定要使用现在时祈使句（例如要使用 change ，而不是 changed 或 changes）。
+
+优先使用正面肯定语句，而不是否定句。
+
+不好的示例：`docs: 更新不直观的例子`
+
+好的示例：`docs: extraQuery 的正确使用方法`
+
+![](https://tva1.sinaimg.cn/large/006y8mN6gy1g6mdn22hcsj312207uabq.jpg)
+
+## 根据模板填写PR描述
+这是我们 Github 的 PR 模板，融合了我们的最佳实践
+![image-20190513142522614](https://tva1.sinaimg.cn/large/006y8mN6gy1g6mdpi1qp8j30zc0u0774.jpg)
+
+下面是实际的好的例子
+![](https://tva1.sinaimg.cn/large/006y8mN6gy1g6mdrclpxij30xr0u00zm.jpg)
 
 ## bug修复
 
@@ -57,12 +69,6 @@
 
 所有的改动一定要通过彻底地测试才表示它真正地被完成了。尽管这些改动可能仅仅是提交到了你的本地仓库中，只有你自己才能看到，但完整的测试同样是非常重要的，因为这些代码可能之后会被推送和共享到远程给其他的开发人员。
 
-## 高质量的提交注释
-
-提交注释的标题需要一个少于50个字符的简短说明。
-
-在一个空白的分割行之后要对改动的细节进行一个详细地描述。例如尝试着回答两个问题：出于什么原因需要进行这次修改？具体改动了些什么？为了和自动生成的提交注释保持一致（例如 git merge 可能会自动生成提交），一定要使用现在时祈使句（例如要使用 change ，而不要使用 changed 和 changes）。
-
 ## 版本控制不是备份系统
 
 版本控制系统具有一个很强大的附带功能，那就是服务器端的备份功能。但是千万不要把 VCS 仅仅当成一个备份系统。特别需要注意的是，只能提交那些有意义的改动。VCS 不是用来备份文件用的。（请参阅 <提交对映改动>）
@@ -72,4 +78,4 @@
 Git 可以支持很多不同的工作流程：长期分支、功能分支、合并以及 rebase、git-flow 等等。选择什么样的开发流程要取决如下一些因素：项目开发的类型，部署模式和（可能是最重要的）开发团队成员的个人习惯。不管怎样，选择什么样的流程都需要得到所有开发成员的一致认可，并且一直遵循它。
 
 ## 学习资源
-[Pro Git](https://git.oschina.net/progit/)<br />[https://learngitbranching.js.org/?NODEMO](https://learngitbranching.js.org/?NODEMO)
+[Pro Git](https://git.oschina.net/progit/)<br />[https://learngitbranching.js.org](https://learngitbranching.js.org/?NODEMO)
