@@ -19,7 +19,9 @@
 
 则有以下计算：
 
-![](https://cdn.nlark.com/yuque/__latex/bc2f19b91e9cd264f001d370de86d839.svg#card=math&code=%5Cfrac%7B3%5Ctimes8%7D%7B0.5%7D%20%3D%2048&height=37&width=82)
+$$
+\frac{3\times8}{0.5} = 48
+$$
 
 这个数字 48 意味着什么呢？
 
@@ -42,7 +44,7 @@
 v-editor 粘贴图片上传就是很好的例子：
 
 新增粘贴上传功能的同时，引入一个相应的[bug](https://github.com/FEMessage/v-editor/releases)
-![image.png](https://cdn.nlark.com/yuque/0/2019/png/160590/1552631682241-6cf5a4e8-f945-488c-8e21-fdf9f5ca7a9d.png#align=left&display=inline&height=300&name=image.png&originHeight=600&originWidth=1400&size=284660&status=done&width=700#align=left&display=inline&height=600&originHeight=600&originWidth=1400&status=done&width=1400)
+![image.png](https://tva1.sinaimg.cn/large/006y8mN6gy1g6nj0tgrt8j312w0goac3.jpg)
 
 追求完美是一个过程，是一种品质。但要意识到，完美是不存在的。事物都有一个发展过程，这就是迭代的意义。不要企图一次性吃成胖子，否则将错失良机。
 
@@ -62,7 +64,7 @@ v-editor 粘贴图片上传就是很好的例子：
 
 背景是项目中原有的意见反馈上传图片的形式不够好用，有用户提出了优化的需求。
 
-![image.png](https://cdn.nlark.com/yuque/0/2019/png/160590/1552631992104-35041a28-e562-42f3-9010-9e968940e8fe.png#align=left&display=inline&height=365&name=image.png&originHeight=1140&originWidth=1192&size=299374&status=done&width=382#align=left&display=inline&height=1140&originHeight=1140&originWidth=1192&status=done&width=1192)
+![image.png](https://tva1.sinaimg.cn/large/006y8mN6gy1g6nj483lmyj30vd0u0wh3.jpg)
 根据描述，我们可以抽象出需求：需要一个 `截图粘贴上传` 的功能。
 
 所以我们解决 v-editor 不支持  `截图粘贴上传`  的问题是首要目的，至于本地粘贴图片，其实在这个场景里很少会有用户这样操作的，因而是小概率事件。

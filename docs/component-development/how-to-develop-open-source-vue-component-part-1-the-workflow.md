@@ -31,30 +31,29 @@
 
 这样做，是为了避免重复的劳动，提高我们的开发效率。
 
-记住，don't reinvent the wheel
+记住，**don't reinvent the wheel**
 
 ### 设计
 结合场景、测试用例，就可以开始设计组件的api，需要梳理逻辑，理清思路，并输出脑图，示例如下：
-![](https://cdn.nlark.com/yuque/0/2018/png/160590/1545364591623-b1cc153b-e619-4483-b1e7-9cd0637886b1.png#align=left&display=inline&height=452&originHeight=1308&originWidth=1080&status=done&width=373)
+![](https://tva1.sinaimg.cn/large/006y8mN6gy1g6nj8t210ij30u010cdik.jpg)
 
 每实现一个功能点，增加一个api，需要补充相应文档。
 
 ### 测试
 根据组件应有的能力，提前想好测试用例，践行“测试先行”的理念，示例如下：
-![](https://cdn.nlark.com/yuque/0/2018/png/160590/1545365192683-219ca130-94ee-41d7-8006-5374100715eb.png#align=left&display=inline&height=551&originHeight=1259&originWidth=1080&status=done&width=473)
+![](https://tva1.sinaimg.cn/large/006y8mN6gy1g6nj928uz9j30u00yzjv0.jpg)
 
-开发时需要写stories展示组件的功能，确保每个story都是可以运行的。
+开发时需要写 demo 展示组件的功能，确保每个 demo 都是可以运行的。
 
 ### 迭代
 有了上面的输出，就可以划分优先级，制定迭代顺序。示例如下：
 
-![](https://cdn.nlark.com/yuque/0/2018/png/160590/1545364558050-5684b5e0-1ec3-4c30-93c7-df2852b5cfe5.png?x-oss-process=image/watermark,type_d3F5LW1pY3JvaGVp,size_10,text_5ru05pmu56eR5oqA,color_FFFFFF,shadow_50,t_80,g_se,x_10,y_10#align=left&display=inline&height=373&originHeight=801&originWidth=1778&status=done&width=827)
+![](https://tva1.sinaimg.cn/large/006y8mN6gy1g6nj9aeyaxj31de0m9q56.jpg)
 
-之后再在gitlab并建立todo，并为todo标记好数字，如1,2,3，则这些todo的数字代表了开发迭代的顺序，组件开发者必须严格按照此顺序进行开发，如有异议，请及时提出，切勿乱序开发，导致混乱。
+之后再评估工作量，圈定一个时间，按照迭代计划去开发。
 
-之后就要评估工作量，圈定一个时间，按照迭代计划去开发。
+在过程中，组件开发者必须严格按照计划顺序进行开发，如有异议，请及时提出，切勿乱序开发，导致混乱。
 
 这样做是为了确保组件开发出来的功能可以最小闭环，而且成本也可控。也即假设5天要实现三个功能点，就算在第5天的时候，只完成两个功能点，也能保证组件是可用的。
 
-要培养时间成本意识。
 

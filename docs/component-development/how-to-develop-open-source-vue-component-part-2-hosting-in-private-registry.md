@@ -1,9 +1,9 @@
 # 组件研发指南（二）：私服托管
 
 ## 基础
-代码托管在[gitlab](https://gitlab.com/deepexi)
+代码托管在[gitlab](https://gitlab.com)
 
-私服使用[verdaccio](http://levy.ren:4873/#/)
+私服使用[verdaccio](https://github.com/verdaccio/verdaccio)
 
 请使用[vue-sfc-cli](https://github.com/FEMessage/vue-sfc-cli)初始化工程
 
@@ -23,12 +23,12 @@ test目录下自带了一个纯函数测试的例子，记得删除，并给组�
 ## 发布
 第一次发布请先注册
 ```bash
-npm adduser --registry http://levy.ren:4873
+npm adduser --registry ${私服地址}
 ```
 
 再登录
 ```bash
-npm login --registry=http://levy.ren:4873
+npm login --registry ${私服地址}
 ```
 
 然后修改版本号
@@ -44,25 +44,22 @@ npm run build
 
 最后发布
 ```bash
-npm publish --registry=http://levy.ren:4873
+npm publish --registry ${私服地址}
 ```
 
 取消发布
 ```bash
-npm unpublish --registry http://levy.ren:4873  --force @femessage/excel-it
+npm unpublish --registry ${私服地址}  --force @femessage/excel-it
 ```
-
-最后，还要记得将私服包放到serverless-console上。
-![image.png](https://cdn.nlark.com/yuque/0/2019/png/160590/1562927838776-c15edd32-738f-43fc-b3ab-a9b311527c7e.png#align=left&display=inline&height=480&name=image.png&originHeight=960&originWidth=2524&size=554976&status=done&width=1262)
 
 ## 安装
 ```bash
-yarn add xxx --registry http://levy.ren:4873 
+yarn add xxx --registry ${私服地址}
 ```
 
 ## 更新
 ```bash
-yarn upgrade xxx --latest --registry http://levy.ren:4873 
+yarn upgrade xxx --latest --registry ${私服地址}
 ```
 
 ## hash值不对
@@ -74,9 +71,5 @@ yarn upgrade xxx --latest --registry http://levy.ren:4873
 
 ```bash
 yarn remove upload-to-ali
+yarn add upload-to-ali ---registry ${私服地址}
 ```
-
-```bash
-yarn add upload-to-ali ---registry http://levy.ren:4873 
-```
-

@@ -10,11 +10,11 @@
 - [ ] 描述是英文，首字母大写，最好开头有 emoji
 
 参考现有仓库
-![image.png](https://cdn.nlark.com/yuque/0/2019/png/160590/1564469058026-08736dbd-7284-4915-96d7-ab418c1da8ef.png#align=left&display=inline&height=294&name=image.png&originHeight=588&originWidth=1958&size=416202&status=done&width=979)
+![image.png](https://tva1.sinaimg.cn/large/006y8mN6gy1g6nizcjynzj31jm0hkq68.jpg)
 
 - [ ] 提供两份README：
-- README.md 是英文的，顶部含一个链接跳到中文
-- README-zh.md 中文文档
+README.md 是英文的，顶部含一个链接跳到中文
+README-zh.md 中文文档
 
 - [ ] docs 下的 demo 文档，在同一份中，中英双语的
 - [ ] docs 下的 guide-xxx 有 中/英 两份
@@ -29,7 +29,7 @@
 - [ ] git init 
 - [ ] git add .* *
 - [ ] git commit -m ' 🎉 open source'
-- [ ] 
+
 - [ ] git remote add origin ${github_repo_url}
 - [ ] git checkout -b dev
 - [ ] git push origin dev:dev
@@ -43,8 +43,8 @@
 
 # 开源维护
 ## issue
-![image.png](https://cdn.nlark.com/yuque/0/2019/png/160590/1562649996929-f62e489e-e67d-4ab2-bdf3-6d39344a7a0c.png#align=left&display=inline&height=276&name=image.png&originHeight=552&originWidth=1990&size=359937&status=done&width=995)
-![image.png](https://cdn.nlark.com/yuque/0/2019/png/160590/1562650028986-83d8c37e-8ec5-4e76-9582-b5ca05cc83be.png#align=left&display=inline&height=232&name=image.png&originHeight=464&originWidth=1568&size=189789&status=done&width=784)
+![image.png](https://tva1.sinaimg.cn/large/006y8mN6gy1g6nj50gbvtj31ja0fc41h.jpg)
+![image.png](https://tva1.sinaimg.cn/large/006y8mN6gy1g6nj57s11lj317k0cwmym.jpg)
 ### bug
 按照模板填写描述
 
@@ -100,10 +100,10 @@ import MyComponent from 'my-component'
 
 ### gihub
 在项目中验证过后，再上 github 提 PR
-![image.png](https://cdn.nlark.com/yuque/0/2019/png/160590/1562650175260-3810ecf5-5bf8-4e70-81ae-d284f2b4ebd4.png#align=left&display=inline&height=248&name=image.png&originHeight=496&originWidth=2030&size=355773&status=done&width=1015)
+![image.png](https://tva1.sinaimg.cn/large/006y8mN6gy1g6nj5divggj31ke0dsacw.jpg)
 
 基于 dev 分支
-![image.png](https://cdn.nlark.com/yuque/0/2019/png/160590/1562650199732-3b58f5e6-785e-4c31-871a-854044a785dd.png#align=left&display=inline&height=151&name=image.png&originHeight=302&originWidth=1964&size=189973&status=done&width=982)
+![image.png](https://tva1.sinaimg.cn/large/006y8mN6gy1g6nj5ojnpzj31ik08emyu.jpg)
 
 按照模板提交
 
@@ -135,11 +135,11 @@ It there requires a change to the documentation？
 下面是一个 PR 示例：
 
 拆分前
-![image.png](https://cdn.nlark.com/yuque/0/2019/png/160590/1567075387731-e7500ad8-4c27-4860-a30f-3b8f59811890.png#align=left&display=inline&height=139&name=image.png&originHeight=278&originWidth=1638&size=247439&status=done&width=819)
+![image.png](https://tva1.sinaimg.cn/large/006y8mN6gy1g6nj6ned4yj319i07q0um.jpg)
 
 
 拆分后
-![image.png](https://cdn.nlark.com/yuque/0/2019/png/160590/1567075453686-459786c5-d746-4ec2-8bcf-d2bf3622f3ab.png#align=left&display=inline&height=385&name=image.png&originHeight=770&originWidth=1738&size=687818&status=done&width=869)
+![image.png](https://tva1.sinaimg.cn/large/006y8mN6gy1g6nj5z3bq1j31ca0len2j.jpg)
 
-![image.png](https://cdn.nlark.com/yuque/0/2019/png/160590/1567075528820-bbacabdd-18eb-422f-89bc-4a80b8604fb8.png#align=left&display=inline&height=151&name=image.png&originHeight=302&originWidth=1438&size=262051&status=done&width=719)
+![image.png](https://tva1.sinaimg.cn/large/006y8mN6gy1g6nj6vup9jj313y08e769.jpg)
 每个 PR 改动的文件少了，这样 review 起来就更容易了。
