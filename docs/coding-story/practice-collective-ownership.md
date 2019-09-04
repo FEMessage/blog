@@ -1,6 +1,6 @@
 # 编程接力
 ## 前言
-本文写于2018-12-16，记录了编程接力的故事。
+本文写于2018-12-16，记录了在广州编程接力的故事。
 ## 正文
 
 从上上周开始，我，listars，alvin三人每天都会一起 review [上传组件](https://github.com/FEMessage/upload-to-ali)的代码。
