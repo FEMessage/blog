@@ -3,17 +3,17 @@
 本文写于2018-12-16，记录了在广州编程接力的故事。
 ## 正文
 
-从上上周开始，我，listars，alvin三人每天都会一起 review [上传组件](https://github.com/FEMessage/upload-to-ali)的代码。
+从上上周开始，我，listars，Alvin三人每天都会一起 review [上传组件](https://github.com/FEMessage/upload-to-ali)的代码。
 
-最初主要 listars 在输出，我和 alvin review。
+最初主要 listars 在输出，我和 Alvin review。
 
-后来是 alvin 输出，我和 listars review。
+后来是 Alvin 输出，我和 listars review。
 
 而这周五，要把组件开源出去了，我要做点修改，则换成了由我输出。
 
-但写到下午六点钟的时候，我感觉没状态了，同时考虑到后面吃了饭还要对项目进度并 review 项目代码，不是我编码的最佳时机了，于是我说："alvin 老师，来编程接力，还剩下三点需要你来协助"。
+但写到下午六点钟的时候，我感觉没状态了，同时考虑到后面吃了饭还要对项目进度并 review 项目代码，不是我编码的最佳时机了，于是我说："Alvin 老师，来编程接力，还剩下三点需要你来协助"。
 
-于是我提交代码，alvin 老师轻松接手，最终完成了目标，把组件 github 开源了。
+于是我提交代码，Alvin 老师轻松接手，最终完成了目标，把组件 github 开源了。
 
 那么，这个故事有什么内涵呢？
 
