@@ -130,7 +130,9 @@ It there requires a change to the documentation？
 ### 1+2 review 规则
 1 是指发起 PR 的人，2 是指进行 code review 的人。也即，每一个 PR，至少要经过两个团队成员 approve 才能合并。
 
-![](https://tva1.sinaimg.cn/large/006y8mN6gy1g73pnatfxnj31jy0de77l.jpg)
+![](https://tva1.sinaimg.cn/large/006y8mN6gy1g73pq0aembj31jq0qu7ac.jpg)
+
+![](https://tva1.sinaimg.cn/large/006y8mN6gy1g73pqvc8srj31jc0ecadk.jpg)
 
 ### PR技巧
 参考文章：[https://deliveroo.engineering/2017/09/06/play-pull-request-roulette.html#ideas-to-make-your-prs-more-review-friendly](https://deliveroo.engineering/2017/09/06/play-pull-request-roulette.html#ideas-to-make-your-prs-more-review-friendly)
