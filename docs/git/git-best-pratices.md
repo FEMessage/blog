@@ -63,7 +63,7 @@
 
 ![](https://tva1.sinaimg.cn/large/006y8mN6gy1g73pqvc8srj31jc0ecadk.jpg)
 
-##礼貌提问
+## 礼貌提问
 在 github 向人提问时，需要有礼貌。当提出 feature request时，还要说明自己的情况，尽可能提供更多的信息给对方。
 
 ![](https://tva1.sinaimg.cn/large/006y8mN6gy1g74vklutqjj31ku0tu109.jpg)
