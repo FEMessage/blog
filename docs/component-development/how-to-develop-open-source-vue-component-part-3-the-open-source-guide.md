@@ -126,28 +126,3 @@ you'd better show `before` and `after`
 ## Docs
 It there requires a change to the documentation？
 ```
-
-### 1+2 review 规则
-1 是指发起 PR 的人，2 是指进行 code review 的人。也即，每一个 PR，至少要经过两个团队成员 approve 才能合并。
-
-![](https://tva1.sinaimg.cn/large/006y8mN6gy1g73pq0aembj31jq0qu7ac.jpg)
-
-![](https://tva1.sinaimg.cn/large/006y8mN6gy1g73pqvc8srj31jc0ecadk.jpg)
-
-### PR技巧
-参考文章：[https://deliveroo.engineering/2017/09/06/play-pull-request-roulette.html#ideas-to-make-your-prs-more-review-friendly](https://deliveroo.engineering/2017/09/06/play-pull-request-roulette.html#ideas-to-make-your-prs-more-review-friendly)
-
-其中最重要的一点：不要一次提交一个很大改动的PR，否则别人很难 review，要学会拆分步骤。
-
-下面是一个 PR 示例：
-
-拆分前
-![image.png](https://tva1.sinaimg.cn/large/006y8mN6gy1g6nj6ned4yj319i07q0um.jpg)
-
-
-拆分后
-![image.png](https://tva1.sinaimg.cn/large/006y8mN6gy1g6nj5z3bq1j31ca0len2j.jpg)
-
-![image.png](https://tva1.sinaimg.cn/large/006y8mN6gy1g6nj6vup9jj313y08e769.jpg)
-每个 PR 改动的文件少了，这样 review 起来就更容易了。
-

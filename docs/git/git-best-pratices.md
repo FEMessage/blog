@@ -5,11 +5,30 @@
 下面是好的示例： 格式化代码，也应该单独一个PR
 ![好的示例](https://tva1.sinaimg.cn/large/006y8mN6gy1g6megbpz6qj315a0le77p.jpg)
 
-下面是不好的示例：因为一个PR修改了太多内容
+下面是不好的示例：因为一个PR修改了不同的主题内容
 
 ![不好的示例](https://tva1.sinaimg.cn/large/006y8mN6gy1g6md819j8qj312y0dajsm.jpg)
 
 ![关闭理由](https://tva1.sinaimg.cn/large/006y8mN6gy1g6md86mgeuj312w0aegmx.jpg)
+
+## 提交“瘦”的PR
+
+参考文章：[https://deliveroo.engineering/2017/09/06/play-pull-request-roulette.html#ideas-to-make-your-prs-more-review-friendly](https://deliveroo.engineering/2017/09/06/play-pull-request-roulette.html#ideas-to-make-your-prs-more-review-friendly)
+
+其中最重要的一点：不要一次提交一个很大改动的PR，否则别人很难 review，要学会拆分步骤。
+
+下面是一个 PR 示例：
+
+拆分前，包含了35个改动，很难 review
+![image.png](https://tva1.sinaimg.cn/large/006y8mN6gy1g6nj6ned4yj319i07q0um.jpg)
+
+拆分后
+![image.png](https://tva1.sinaimg.cn/large/006y8mN6gy1g6nj5z3bq1j31ca0len2j.jpg)
+
+单个PR的改动文件只有11个
+
+![image.png](https://tva1.sinaimg.cn/large/006y8mN6gy1g6nj6vup9jj313y08e769.jpg)
+每个 PR 改动的文件少了，这样 review 起来就更容易了。
 
 ## 使用正确的标题
 
@@ -33,6 +52,27 @@
 
 下面是实际的好的例子
 ![](https://tva1.sinaimg.cn/large/006y8mN6gy1g6mdrclpxij30xr0u00zm.jpg)
+
+## 1+2 review 规则
+
+1 是指发起 PR 的人，2 是指进行 code review 的人。也即，每一个 PR，至少要经过两个团队成员 approve 才能合并。
+
+> 上面是针对 github 的协作，项目组中可酌情变为 1+1 规则
+
+![](https://tva1.sinaimg.cn/large/006y8mN6gy1g73pq0aembj31jq0qu7ac.jpg)
+
+![](https://tva1.sinaimg.cn/large/006y8mN6gy1g73pqvc8srj31jc0ecadk.jpg)
+
+##礼貌提问
+在 github 向人提问时，需要有礼貌。当提出 feature request时，还要说明自己的情况，尽可能提供更多的信息给对方。
+
+![](https://tva1.sinaimg.cn/large/006y8mN6gy1g74vklutqjj31ku0tu109.jpg)
+
+上面的示例有三个重点：
+
+1. 开头表达感谢
+2. 中间说明己方的使用情况，并给出相应链接
+3. 最后参考业界已有实现，给出一个方案设想，并给出相应链接
 
 ## bug修复
 
@@ -73,10 +113,6 @@
 ## 版本控制不是备份系统
 
 版本控制系统具有一个很强大的附带功能，那就是服务器端的备份功能。但是千万不要把 VCS 仅仅当成一个备份系统。特别需要注意的是，只能提交那些有意义的改动。VCS 不是用来备份文件用的。（请参阅 <提交对映改动>）
-
-## 遵循一个工作流程
-
-Git 可以支持很多不同的工作流程：长期分支、功能分支、合并以及 rebase、git-flow 等等。选择什么样的开发流程要取决如下一些因素：项目开发的类型，部署模式和（可能是最重要的）开发团队成员的个人习惯。不管怎样，选择什么样的流程都需要得到所有开发成员的一致认可，并且一直遵循它。
 
 ## 学习资源
 [Pro Git](https://git.oschina.net/progit/)<br />[https://learngitbranching.js.org](https://learngitbranching.js.org/?NODEMO)
