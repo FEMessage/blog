@@ -3,6 +3,8 @@
 ## 基础
 代码托管在[gitlab](https://gitlab.com)
 
+分支模型：master + feature，协作方式跟 github 一样，使用 pull request 工作流，不同的是，私服不需要 dev 分支
+
 私服使用[verdaccio](https://github.com/verdaccio/verdaccio)
 
 请使用[vue-sfc-cli](https://github.com/FEMessage/vue-sfc-cli)初始化工程
