@@ -96,7 +96,19 @@ A clear and concise description of what you expected to happen.
 import MyComponent from 'my-component'
 ```
 
-更多具体说明请查看 [yarn 文档](https://yarnpkg.com/zh-Hant/docs/cli/link)
+验证完毕，记得在项目中清除link
+
+```js
+// https://yarnpkg.com/zh-Hant/docs/cli/link
+yarn unlink my-component
+```
+
+想要查看项目中link状态，使用以下命令
+
+```sh
+# https://github.com/yarnpkg/yarn/issues/1722
+( ls -l node_modules ; ls -l node_modules/@* ) | grep ^l
+```
 
 ### gihub
 在项目中验证过后，再上 github 提 PR
